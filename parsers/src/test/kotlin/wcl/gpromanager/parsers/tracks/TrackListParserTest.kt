@@ -18,12 +18,12 @@ class TrackListParserTest {
 
     @Test
     fun whenTrackListPageParsed_thenCorrectNumberOfTrackHeadersExtracted() {
-        assertThat(testTrackHeaders.size.toLong()).isEqualTo(EXPECTED_NUMBER_OF_TRACKS.toLong());
+        assertThat(testTrackHeaders.size.toLong()).isEqualTo(EXPECTED_NUMBER_OF_TRACKS.toLong())
     }
 
     @Test
     fun whenTrackListPageParsed_thenASpecficTrackShouldBeExtracted() {
-        assertThat(testTrackHeaders).contains(TrackHeader(EXPECTED_TRACK_ID, EXPECTED_TRACK_NAME));
+        assertThat(testTrackHeaders).contains(TrackHeader(EXPECTED_TRACK_ID, EXPECTED_TRACK_NAME))
     }
 
     companion object {
