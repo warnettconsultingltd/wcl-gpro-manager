@@ -23,5 +23,6 @@
 hs_err_pid*
 replay_pid*
 /parsers/target/
+/target/
 /.idea/
 /RESEARCH - NOT FOR VERSION CONTROL/
