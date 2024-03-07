@@ -2,7 +2,7 @@ package wcl.gpromanager.parsers.tracks
 
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
-import wcl.gpromanager.parsers.tracks.entities.Track
+import wcl.gpromanager.entities.track.Track
 import wcl.gpromanager.parsers.utils.ValueRetriever
 import java.util.function.Function
 
@@ -58,9 +58,9 @@ class TrackParser(private val floatRetriever: ValueRetriever<Float>,
         private const val TYRE_WEAR_SELECTOR = "tr:eq(7) > td:eq(3)"
         private const val PITLANE_TIME_SELECTOR = "tr:eq(8) > td:eq(1)"
         private const val GRIP_LEVEL_SELECTOR = "tr:eq(8) > td:eq(3)"
-        private val REMOVE_KM = Function { s: String -> s!!.replace("km".toRegex(), "") }
-        private val REMOVE_KM_PER_HOUR = Function { s: String -> s!!.replace("km/h".toRegex(), "") }
-        private val REMOVE_S = Function { s: String-> s!!.replace("s".toRegex(), "") }
+        private val REMOVE_KM = Function { s: String -> s.replace("km".toRegex(), "") }
+        private val REMOVE_KM_PER_HOUR = Function { s: String -> s.replace("km/h".toRegex(), "") }
+        private val REMOVE_S = Function { s: String-> s.replace("s".toRegex(), "") }
 
         private fun extractTrackImageFileName(doc: Document): String {
             val src = doc.select(TRACK_IMAGE_SELECTOR).attr(TRACK_IMAGE_NAME_SELECTOR)

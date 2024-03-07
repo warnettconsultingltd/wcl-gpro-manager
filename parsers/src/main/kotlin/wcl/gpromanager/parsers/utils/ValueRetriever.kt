@@ -37,5 +37,5 @@ interface ValueRetriever<T> {
         return transformation.apply(value)
     }
 
-    fun convert(attributeValue: String): T
+    fun convert(value: String): T
 }

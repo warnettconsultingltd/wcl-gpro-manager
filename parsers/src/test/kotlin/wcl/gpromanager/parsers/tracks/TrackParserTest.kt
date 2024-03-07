@@ -2,9 +2,9 @@ package wcl.gpromanager.parsers.tracks
 
 import org.junit.jupiter.api.*
 import wcl.gpromanager.parsers.testutils.HtmlFileLoader.loadHtmlFile
-import wcl.gpromanager.parsers.tracks.entities.Track
 import wcl.gpromanager.parsers.utils.*
 import org.assertj.core.api.Assertions.*
+import wcl.gpromanager.entities.track.Track
 
 class TrackParserTest {
     private lateinit var testParser: TrackParser

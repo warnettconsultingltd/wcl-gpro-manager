@@ -1,7 +1,6 @@
 package wcl.gpromanager.parsers.tracks
 
 import org.jsoup.Jsoup
-import wcl.gpromanager.parsers.tracks.entities.TrackHeader
 
 private const val TRACK_HEADER_ATTRIBUTES_SELECTOR = "table > tbody > tr > td > a"
 
