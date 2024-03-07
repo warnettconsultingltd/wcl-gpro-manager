@@ -1,4 +1,4 @@
-package wcl.gpromanager.parsers.tracks.entities
+package wcl.gpromanager.entities.track
 
 data class Track(
     val id: Int,
